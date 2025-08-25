@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imgs/logo.svg" type="image/x-svg" />
+    <title>Login | E-Learn</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="./fonts/all.min.css" />
+    <link rel="stylesheet" href="./styles/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <p>login</p>
+      </div>
+      <p class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+        provident necessitatibus.
+      </p>
+      <form method="post">
+        <div class="row">
+          <label for="name">user name</label>
+          <input
+            type="text"
+            name="userName"
+            id="name"
+            placeholder="Enter your user Name"
+          />
+        </div>
+        <div class="row">
+          <label for="email">email address</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your Email address"
+          />
+        </div>
+        <div class="row pass">
+          <label for="password">password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter your Password"
+          />
+          <i class="fa-solid fa-eye-slash" onclick="togglePass(event)"></i>
+        </div>
+        <div class="row pass">
+          <label for="confirmPassword">confirm password</label>
+          <input
+            type="password"
+            name="confirmPassword"
+            id="confirmPassword"
+            placeholder="Confirm password"
+          />
+          <i class="fa-solid fa-eye-slash" onclick="togglePass(event)"></i>
+        </div>
+        <div class="btns">
+          <button class="btn" type="submit">register</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="popper"></div>
+
+    <script src="./fonts/all.min.js"></script>
+    <script src="./js/login.js"></script>
+  </body>
+</html>

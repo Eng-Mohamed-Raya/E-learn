@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/logo.svg" type="image/x-svg">
+    <title>E-Learn</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- styles -->
+     <link rel="stylesheet" href="./fonts/all.min.css">
+     <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    
+    <!-- start header -->
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./imgs/logo.svg" alt="logo">
+            </div>
+            <nav class="navbar">
+                <div class="menu">
+                    <i class="fa-solid fa-xmark" onclick="hide()"></i>
+                    <ul class="links">
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#courses">courses</a></li>
+                        <li><a href="#careers">careers</a></li>
+                        <li><a href="#blogs">blog</a></li>
+                        <li><a href="#about">about us</a></li>
+                    </ul>
+                    <div class="btns">
+                        <button class="btn" onclick="goLoginPage()">login</button>
+                        <button class="btn">sign up</button>
+                    </div>
+               </div>
+            </nav>
+            <i class="fa-solid fa-bars" onclick="show()"></i>
+        </div>
+    </header>
+
+    <!-- end header -->
+    <!-- start main -->
+    <main>
+        <!-- start blogs -->
+        <section id="blogs">
+            <div class="container ">
+                <div class="section-title">
+                    <p>related blog</p>
+                </div>
+                <div class=" swiper">
+                    <div class="blog-container swiper-wrapper">
+                    <!-- <div class="card swiper-slide">
+                        <div class="img">
+                            <img src="https://images.unsplash.com/photo-1648737966636-2fc3a5fffc8a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        <p class="card-title">The Future of Web Development</p>
+                        <div class="author">
+                            <img src="https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="author-img" class="author-img">
+                            <span class="author-name">Sarah Johnson</span>
+                        </div>
+                        <p class="description">
+                            Exploring the trends and technologies shaping the next decade of the web.Exploring the trends and technologies shaping the next decade of the web.
+                        </p>
+                       <div class="row">
+                            <a href="">Read more</a>
+                            <div class="viewer">
+                                <i class="fa-solid fa-eye"></i>
+                                <span>120</span>
+                            </div>
+                        </div>
+                    </div> -->
+          
+                
+               
+                    </div>              
+                </div>
+            </div>
+        </section>
+        <!-- end blogs -->
+        <!-- start articles -->
+        <section id="articles">
+            <div class="container">
+                <div class="section-title">
+                    <p>Marketing Articles</p>
+                </div>
+                <div class="articles-container">
+                <!-- <div class="card">
+                        <div class="img">
+                            <img src="https://images.unsplash.com/photo-1648737966636-2fc3a5fffc8a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        <div class="row">
+                            <div class="category">
+                                <i class="fa-solid fa-table-cells-large"></i>
+                                <span>
+                                    Technology
+                                </span>
+                            </div>
+                            <div class="length">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>7 min read</span>
+                            </div>
+                        </div>
+                        <p class="card-title">The Future of Web Development</p>
+                       
+                        <p class="description">
+                            Exploring the trends and technologies shaping the next decade of the web.Exploring the trends and technologies shaping the next decade of the web.
+                        </p>
+                       <div class="row">
+                         <div class="author">
+                            <img src="https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="author-img" class="author-img">
+                            <span class="author-name">Sarah Johnson</span>
+                        </div>
+                            <div class="price">
+                                <i class="discount">$12</i>
+                                <span>10$</span>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- end main -->
+    <!-- footer -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="row">
+                <img src="./imgs/logo.svg" alt="logo" class="logo">
+                 <span class="line"></span>
+                <p>Virtual Class for Zoom</p>
+            </div>
+            <div class="row">
+                <span><a href="">Careers</a></span>
+                <span class="line"></span>
+                <span><a href="">Privacy Policy</a></span>
+                <span class="line"></span>
+                <span><a href="">Terms & Conditions</a></span>
+            </div>
+            <div class="row">
+                <p>© 2021 Class Technologies Inc. </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./fonts/all.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+/* import font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* reset */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+:root {
+  --main-color: #49bbbd;
+  --primary-color: #252641;
+  --secondary-color: #696984;
+}
+
+/* main styles */
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-color);
+}
+.btn {
+  border: none;
+  width: 160px;
+  height: 60px;
+  border-radius: 80px;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+/* responsive of container */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 430px) {
+  .container {
+    width: 99%;
+  }
+}
+/* start header */
+header {
+  width: 100%;
+  background-color: var(--main-color);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.logo img {
+  max-width: 100px;
+}
+.navbar {
+  z-index: 1000;
+}
+.menu,
+.menu ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.menu ul li a {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  text-transform: capitalize;
+  transition: border 0.1s ease-out;
+}
+.menu ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.btns .btn:first-child {
+  color: var(--secondary-color);
+}
+.btns .btn:last-child {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.301);
+}
+.btns .btn:last-child:hover {
+  color: var(--secondary-color);
+  background-color: #fff;
+}
+.btns .btn:first-child:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.301);
+}
+.fa-xmark,
+.fa-bars {
+  display: none;
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+/* responsive of header */
+
+@media screen and (max-width: 1200px) {
+  header .container {
+    width: 95%;
+  }
+  .menu,
+  .menu ul {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 950px) {
+  header .container {
+    height: 120px;
+    width: 100%;
+    padding: 0;
+  }
+  .logo {
+    padding: 20px;
+  }
+  .fa-xmark,
+  .fa-bars {
+    display: block;
+  }
+  .navbar {
+    display: none;
+    align-self: start;
+    width: 50%;
+    height: 100vh;
+    background-color: var(--primary-color);
+    position: fixed;
+    right: 0;
+  }
+  .fa-xmark {
+    align-self: end;
+    padding-top: 25px;
+  }
+  .menu,
+  .menu ul,
+  .btns {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+@media screen and (max-width: 428px) {
+  .menu,
+  .menu ul,
+  .btns {
+    gap: 1rem;
+  }
+}
+.hide {
+  display: none;
+}
+
+/* end header */
+
+/* start main */
+
+.section-title {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 2rem 0;
+}
+
+/*  start blogs  */
+#blogs {
+  background-color: rgba(157, 204, 255, 0.2);
+  padding-bottom: 4rem;
+}
+.blog-container {
+  display: flex;
+  gap: 20px;
+}
+.card {
+  background-color: #fff;
+  width: 700px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 20px;
+  border-radius: 20px;
+}
+.swiper-slide:hover {
+  cursor: pointer;
+}
+.card .img {
+  object-fit: contain;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  height: 350px;
+  border-radius: 20px;
+}
+.card .card-title {
+  font-size: 26px;
+  font-weight: 700;
+}
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.author-name {
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+.card .author-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.card .description {
+  text-wrap: balance;
+  color: var(--secondary-color);
+}
+.card .row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .row a {
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
+.card .row .viewer {
+  color: var(--secondary-color);
+}
+.card .row .viewer .fa-eye {
+  color: var(--main-color);
+  margin-right: 10px;
+}
+/* end blogs */
+
+/* start articles */
+
+#articles {
+  padding: 4rem 0;
+}
+.articles-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(374px, 1fr));
+  gap: 20px;
+}
+#articles .card {
+  width: auto;
+  height: 617px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#articles.card img {
+  height: 250px;
+}
+.category,
+.length {
+  display: flex;
+  gap: 10px;
+}
+#articles .fa-table-cells-large,
+.fa-clock {
+  font-size: 25px;
+}
+
+.row {
+  color: var(--secondary-color);
+}
+#articles .card .row .price span {
+  color: var(--main-color);
+  font-size: 24px;
+  font-weight: 900;
+}
+#articles .card .row .price .discount {
+  margin-right: 10px;
+  color: var(--secondary-color);
+  text-decoration: line-through;
+  font-size: 18px;
+  font-weight: 300;
+}
+/* end articles */
+
+/* end main */
+
+/* start footer */
+
+footer {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 40vh;
+}
+.footer-container {
+  width: 40%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.footer-container .row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-container .row:first-child {
+  color: #fff;
+  gap: 2rem;
+}
+.footer-container a {
+  color: var(--secondary-color);
+}
+.footer-container .line {
+  width: 1px;
+  height: 100%;
+  background-color: var(--secondary-color);
+}
+
+/* responsive of footer */
+
+@media screen and (max-width: 1024px) {
+  .footer-container {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer-container {
+    width: 80%;
+  }
+  .footer-container .row {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .footer-container {
+    width: 100%;
+  }
+}
+
+/* end footer */
