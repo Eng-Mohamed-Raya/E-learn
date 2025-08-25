@@ -131,3 +131,10 @@ body {
   color: rgb(255, 0, 0);
   font-size: 20px;
 }
+@media screen and (max-width:768px){
+  .popper {
+  top:10px;
+  left: 0px;
+   width: 80%;
+}
+}
