@@ -355,7 +355,13 @@ footer {
 }
 @media screen and (max-width: 428px) {
   .footer-container {
-    width: 100%;
+    width: 99%;
+  }
+  .footer-container span{
+    font-size: 12px;
+  }
+   .section-title{
+    padding-left: 20px;
   }
 }
 
